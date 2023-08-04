@@ -5,14 +5,5 @@
     <default remove="remove">
     </default>
 
-    <bhensel>
-      <profile>default</profile>
-      <networks>
-        <ip>::/0</ip>
-      </networks>
-      <password>lR71jklJ7OhAsd4X</password>
-      <quota>default</quota>
-      <access_management>1</access_management>
-    </bhensel>
   </users>
 </clickhouse>

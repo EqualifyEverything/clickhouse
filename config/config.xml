@@ -1103,7 +1103,7 @@
         asynchronous_metrics - send data from table system.asynchronous_metrics
         status_info - send data from different component from CH, ex: Dictionaries status
     -->
-    <!--
+
     <prometheus>
         <endpoint>/metrics</endpoint>
         <port>9363</port>
@@ -1113,7 +1113,7 @@
         <asynchronous_metrics>true</asynchronous_metrics>
         <status_info>true</status_info>
     </prometheus>
-    -->
+
 
     <!-- Query log. Used only for queries with setting log_queries = 1. -->
     <query_log>
@@ -1508,9 +1508,9 @@
         <!-- Changing <enabled> to true allows sending crash reports to -->
         <!-- the ClickHouse core developers team via Sentry https://sentry.io -->
         <!-- Doing so at least in pre-production environments is highly appreciated -->
-        <enabled>false</enabled>
+        <enabled>true</enabled>
         <!-- Change <anonymize> to true if you don't feel comfortable attaching the server hostname to the crash report -->
-        <anonymize>false</anonymize>
+        <anonymize>true</anonymize>
         <!-- Default endpoint should be changed to different Sentry DSN only if you have -->
         <!-- some in-house engineers or hired consultants who're going to debug ClickHouse issues for you -->
         <endpoint>https://6f33034cfe684dd7a3ab9875e57b1c8d@o388870.ingest.sentry.io/5226277</endpoint>
