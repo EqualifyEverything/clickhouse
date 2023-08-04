@@ -1,11 +1,5 @@
 -- GovA11y ClickHouse Setup Script
 
-CREATE DATABASE gova11y;
-
--- Create GovA11y User & Grant Perms
-CREATE USER a11ypython IDENTIFIED WITH plaintext_password BY 'SnakeInTheData';
-GRANT ALL ON gova11y.* TO a11ypython;
-
 
 -- Create axe_tests table
 CREATE TABLE gova11y.axe_tests
