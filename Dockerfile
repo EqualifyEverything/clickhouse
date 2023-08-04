@@ -8,9 +8,6 @@ COPY startup/ /docker-entrypoint-initdb.d/
 # Copy configuration files directly into /etc/clickhouse-server/
 COPY config/ /etc/clickhouse-server/
 
-# Define a volume for the config
-VOLUME /etc/clickhouse-server
-
 # Define a volume for the data
 VOLUME /var/lib/clickhouse
 
