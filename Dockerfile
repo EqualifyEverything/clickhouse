@@ -18,7 +18,6 @@ VOLUME /var/lib/clickhouse
 VOLUME /var/log/clickhouse-server
 
 # Set environment variables
-ENV CLICKHOUSE_DB=gova11y
 ENV CLICKHOUSE_USER=ChangeMeToWhatEverItWontBreakThings
 ENV CLICKHOUSE_PASSWORD=ChangeMeToWhatEverItWontBreakThings
 
