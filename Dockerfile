@@ -34,8 +34,12 @@ EXPOSE 9363
 EXPOSE 8123
 EXPOSE 9000
 
-# Define healthcheck
-HEALTHCHECK --start-period=5s --interval=10s --timeout=5s --retries=5 \
+
+# Health Check
+# Install curl
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+# Define Health Check
+HEALTHCHECK --start-period=s --interval=10s --timeout=5s --retries=5 \
   CMD curl -f http://localhost:8123/ping || exit 1
 
 # Define the command to start ClickHouse
