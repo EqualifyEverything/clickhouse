@@ -1,9 +1,9 @@
 -- GovA11y ClickHouse Setup Script
 
-CREATE DATABASE ${CLICKHOUSE_DB};
+CREATE DATABASE gova11y;
 
 -- Create GovA11y User & Grant Perms
-CREATE USER ${CLICKHOUSE_USER} IDENTIFIED WITH plaintext_password BY '${CLICKHOUSE_PASSWORD}';
+CREATE USER a11ypython IDENTIFIED WITH plaintext_password BY 'SnakeInTheData';
 GRANT ALL ON gova11y.* TO a11ypython;
 
 

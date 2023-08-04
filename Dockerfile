@@ -19,8 +19,8 @@ VOLUME /var/log/clickhouse-server
 
 # Set environment variables
 ENV CLICKHOUSE_DB=gova11y
-ENV CLICKHOUSE_PASSWORD=SnakeInTheData
-ENV CLICKHOUSE_USER=a11ypython
+ENV CLICKHOUSE_USER=ChangeMeToWhatEverItWontBreakThings
+ENV CLICKHOUSE_PASSWORD=ChangeMeToWhatEverItWontBreakThings
 
 # Do some housekeeping
 RUN locale-gen en_US.UTF-8
