@@ -24,8 +24,9 @@ VOLUME /var/log/clickhouse-server
 
 # Create GovA11y
 # ENV CLICKHOUSE_DB=gova11y
-# ENV CLICKHOUSE_USER=ChangeMe
-# ENV CLICKHOUSE_PASSWORD=PleaseChangeMe
+ENV CLICKHOUSE_USER=ChangeMe
+ENV CLICKHOUSE_PASSWORD=PleaseChangeMe
+ENV CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1
 
 # Do some housekeeping
 RUN locale-gen en_US.UTF-8
