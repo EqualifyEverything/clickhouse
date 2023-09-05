@@ -8,16 +8,19 @@ COPY startup/ /docker-entrypoint-initdb.d/
 # Copy configuration files directly into /etc/clickhouse-server/
 COPY config/ /etc/clickhouse-server/
 
+# Copy & Setup Migrations
+COPY migrations/ /etc/clickhouse-server/migrations/
+
+
+# Ensure init.sh is executable
+RUN chmod +x /docker-entrypoint-initdb.d/init.sh
+
+
 # Define a volume for the data
 VOLUME /var/lib/clickhouse
 
 # Define a volume for the logs
 VOLUME /var/log/clickhouse-server
-
-# Set environment variables
-ENV CLICKHOUSE_DB=gova11y
-ENV CLICKHOUSE_USER=a11ypython
-ENV CLICKHOUSE_PASSWORD=SnakeInTheData
 
 # Do some housekeeping
 RUN locale-gen en_US.UTF-8
