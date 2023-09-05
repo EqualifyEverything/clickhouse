@@ -97,16 +97,6 @@
                 <ip>::/0</ip>
             </networks>
         </bytebase>
-        <gova11y_root>
-            <password_sha256_hex>f9d3d743297e476b6bb6877bae7db2c2165a44fd8ae9a117ba8a1f32e538308f</password_sha256_hex>
-            <access_management>1</access_management>
-            <named_collection_control>1</named_collection_control>
-            <show_named_collections>1</show_named_collections>
-            <show_named_collections_secrets>1</show_named_collections_secrets>
-            <networks>
-                <ip>::/0</ip>
-            </networks>
-        </gova11y_root>
 
     </users>
 
