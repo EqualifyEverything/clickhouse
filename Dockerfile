@@ -22,13 +22,17 @@ VOLUME /var/lib/clickhouse
 # Define a volume for the logs
 VOLUME /var/log/clickhouse-server
 
+# Create GovA11y
+ENV CLICKHOUSE_DB=gova11y
+CLICKHOUSE_USER
+CLICKHOUSE_PASSWORD
+
 # Do some housekeeping
 RUN locale-gen en_US.UTF-8
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
 ENV TZ=UTC
-
 # Expose ports
 EXPOSE 8123
 EXPOSE 9000
