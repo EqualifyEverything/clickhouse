@@ -29,6 +29,7 @@ ENV TZ=UTC
 # Expose ports
 EXPOSE 8123
 EXPOSE 9000
+EXPOSE 9005
 
 
 # Health Check
