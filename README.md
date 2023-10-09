@@ -14,5 +14,3 @@ Map these ports to something
 EXPOSE 9363
 EXPOSE 8123
 EXPOSE 9000
-
-https://clickhouse.com/docs/en/interfaces/postgresql
