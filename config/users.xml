@@ -87,16 +87,7 @@
             <!-- User can create other users and grant rights to them. -->
             <!-- <access_management>1</access_management> -->
         </default>
-        <bytebase>
-            <password_sha256_hex>2733fb931a17a1d1288d71174248cd9baf4591683dd2b69b3a55a2f7d622104b</password_sha256_hex>
-            <access_management>1</access_management>
-            <named_collection_control>1</named_collection_control>
-            <show_named_collections>1</show_named_collections>
-            <show_named_collections_secrets>1</show_named_collections_secrets>
-            <networks>
-                <ip>::/0</ip>
-            </networks>
-        </bytebase>
+
 
     </users>
 
