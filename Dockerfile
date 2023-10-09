@@ -28,12 +28,18 @@ ENV CLICKHOUSE_USER=ChangeMe
 ENV CLICKHOUSE_PASSWORD=PleaseChangeMe
 ENV CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1
 
+# Set default Sentry reporting
+ENV SENTRY_DSN="https://29247ae8984e5ab904e5ca6daba80497@sentry.beltway.cloud/16"
+ENV SENTRY_ANONYMIZE=true
+ENV SEND_CRASH_REPORTS=true
+
 # Do some housekeeping
 RUN locale-gen en_US.UTF-8
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
 ENV TZ=UTC
+
 # Expose ports
 EXPOSE 8123
 EXPOSE 9000

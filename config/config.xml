@@ -1508,13 +1508,17 @@
         <!-- Changing <enabled> to true allows sending crash reports to -->
         <!-- the ClickHouse core developers team via Sentry https://sentry.io -->
         <!-- Doing so at least in pre-production environments is highly appreciated -->
-        <enabled>true</enabled>
+        <enabled>{{ env('SEND_CRASH_REPORTS') }}</enabled>
         <!-- Change <anonymize> to true if you don't feel comfortable attaching the server hostname to the crash report -->
-        <anonymize>true</anonymize>
+        <anonymize>{{ env('SENTRY_ANONYMIZE') }}</anonymize>
         <!-- Default endpoint should be changed to different Sentry DSN only if you have -->
         <!-- some in-house engineers or hired consultants who're going to debug ClickHouse issues for you -->
-        <endpoint>https://6f33034cfe684dd7a3ab9875e57b1c8d@o388870.ingest.sentry.io/5226277</endpoint>
+        <!-- <endpoint>https://6f33034cfe684dd7a3ab9875e57b1c8d@o388870.ingest.sentry.io/5226277</endpoint> -->
+        <endpoint>{{ env('SENTRY_DSN') }}</endpoint>
     </send_crash_reports>
+
+
+
 
     <!-- Uncomment to disable ClickHouse internal DNS caching. -->
     <!-- <disable_internal_dns_cache>1</disable_internal_dns_cache> -->
